@@ -1,0 +1,114 @@
+
+                        EXECUTIVE SUMMARY
+
+
+
+                        This report analyzes customer spending, product category performance,
+                        employee sales performance, and revenue distribution by country
+                        using the Northwind database.
+
+
+                        The objective is to identify key revenue drivers and provide
+                        business recommendations based on the available data.
+
+
+
+                        CUSTOMER ANALYSIS
+
+
+
+                        The top 3 customers accounted for 41.91% of the total revenue.
+
+                        indicating that a significant portion of sales comes from a small
+                        group of strategic customers.
+
+
+                        The highest-value customer was Ernst Handel, generating $38031.21 and representing
+                        18.27% of the total revenue analyzed.
+
+
+                        Additionally, The average customer spending is $20817.521
+
+
+
+                        CATEGORY ANALYSIS
+
+
+
+                        The category with the highest revenue was Beverages.
+
+
+                        This category generated $115832.5 and represented 28.76% of the total category revenue.
+
+
+                        This suggests that the category plays a major role in the company's
+                        overall sales performance.
+
+
+
+                        EMPLOYEE ANALYSIS
+
+
+
+                        The highest-performing employee was Margaret Peacock.
+
+
+                        This employee generated $111888.5 and contributed 27.78% of the total employee revenue analyzed.
+
+
+                        The top five employees represented 73.47% of total revenue,
+                        showing that sales performance is concentrated among a limited
+                        group of employees.
+
+
+
+                        GEOGRAPHIC ANALYSIS
+
+
+
+                        The country with the highest revenue was USA.
+
+
+                        This market generated $72971.75 and accounted for 21.11% of the revenue analyzed.
+
+
+                        The results suggest that this country represents one of the company's
+                        most important markets.
+
+
+
+                        RECOMMENDATIONS
+
+
+
+                        Maintain strong relationships with high-value customers.
+
+
+
+                        Increase investment in top-performing categories.
+
+
+
+                        Study the sales strategies of top-performing employees.
+
+
+
+                        Strengthen marketing efforts in high-revenue countries.
+
+
+
+                        Monitor revenue concentration to reduce dependence on a small number of customers.
+
+
+
+
+                        FINAL CONCLUSION
+
+
+
+                        The analysis identified the main customers, categories, employees,
+                        and countries responsible for generating revenue.
+
+                        These findings can help the company focus resources on its strongest
+                        areas while improving opportunities in lower-performing segments.
+                        
