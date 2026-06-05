@@ -11,14 +11,17 @@ from queries import query_categories_total_revenue
 from queries import query_customers_total_revenue
 from queries import query_total_revenue
 from queries import query_power_bi
+
 from graphics import graphics_high_value_customers
 from graphics import graphics_top_categories_revenue
 from graphics import graphics_top_employees_by_revenue
 from graphics import graphics_top_countries_by_revenue
+
 from analysis import customers_system
 from analysis import categories_system
 from analysis import employees_system
 from analysis import countries_system
+
 from reports import report_northwind_txt
 
 
@@ -34,10 +37,13 @@ with sqlite3.connect("Northwind Business Analysis v1\\Northwind.db") as conn:
     df_total_revenue = pd.read_sql_query( query_total_revenue,conn)
     df_power_bi = pd.read_sql_query( query_power_bi,conn)
 
-print(df_total_revenue)
+
+
 # =========================
 # HIGH VALUE COSTUMERS ANALYSIS
 # =========================
+
+
 
 print(df_high_value_customers)
 
@@ -46,9 +52,13 @@ customers_data = customers_system(df_high_value_customers)
 
 graphics_high_value_customers(df_high_value_customers)
 
+
+
 # =========================
 # TOP CATEGORIES ANALYSIS
 # =========================
+
+
 
 print(df_top_categories_revenue)
 
