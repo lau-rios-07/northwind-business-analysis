@@ -39,3 +39,15 @@ The objective of this project is to analyze sales data from the Northwind databa
 - Ernst Handel was the highest-value customer.
 - Beverages was the top-performing category.
 - Margaret Peacock was the top-performing employee.
+
+
+
+## Execution
+
+Run the analysis pipeline:
+
+python main.py
+
+Export data for Power BI:
+
+python northwind_dashboard_csv.py
