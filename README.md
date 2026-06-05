@@ -7,13 +7,13 @@ PROJECT GOALS
 The objective of this project is to analyze sales data from the Northwind database and identify:
 
 
-.Top customers
+-Top customers
 
-.Best-performing categories
+-Best-performing categories
 
-.Top employees by revenue
+-Top employees by revenue
 
-.Revenue distribution by country
+-Revenue distribution by country
 
 
 
@@ -50,7 +50,7 @@ PROJECT STRUCTURE
 
 
 
-DASHBOARD PREVIEW
+
 
 
 
