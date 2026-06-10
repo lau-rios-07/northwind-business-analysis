@@ -1,5 +1,10 @@
+from pathlib import Path
+
+
+report_path = Path(__file__).parent.parent / "report_northwind.txt"
+
 def report_northwind_txt(customers_data, categories_data, employees_data, countries_data):
-    with open("Northwind Business Analysis v1\\report_northwind.txt", "w", encoding="UTF-8") as archive_txt:
+    with open(report_path, "w", encoding="UTF-8") as archive_txt:
         archive_txt.write(f'''
                         EXECUTIVE SUMMARY\n\n\n
                         This report analyzes customer spending, product category performance,

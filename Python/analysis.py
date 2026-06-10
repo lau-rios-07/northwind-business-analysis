@@ -1,11 +1,11 @@
-def customers_system(dataframe):
+def customers_system(dataframe, total_revenue):
     total_revenue_customers = dataframe["TotalSpent"].sum()
     average_customer_spending = dataframe["TotalSpent"].mean()
     top_customer_revenue = dataframe["TotalSpent"].max()
     top_customer_name = dataframe.loc[dataframe["TotalSpent"].idxmax(),"CustomerName"]
-    top_customer_percentage = (top_customer_revenue / total_revenue_customers) * 100
+    top_customer_percentage = (top_customer_revenue / total_revenue) * 100
     top_3_revenue = dataframe["TotalSpent"].head(3).sum()
-    top_3_customer_percentage = (top_3_revenue / total_revenue_customers) * 100
+    top_3_customer_percentage = (top_3_revenue / total_revenue) * 100
     return {
         "total_revenue_customers": total_revenue_customers,
         "average_customer_spending": average_customer_spending,
@@ -49,12 +49,12 @@ def employees_system(dataframe):
     } 
 
 
-def countries_system(dataframe):
+def countries_system(dataframe, total_revenue):
     total_revenue_countries = dataframe["Revenue"].sum()
     average_country_revenue = dataframe["Revenue"].mean()
     top_country_revenue = dataframe["Revenue"].max()
     top_country_name = dataframe.loc[dataframe["Revenue"].idxmax(), "Country"]
-    top_country_percentage = (top_country_revenue / total_revenue_countries) * 100
+    top_country_percentage = (top_country_revenue / total_revenue) * 100
     return {
         "total_revenue_countries": total_revenue_countries,
         "average_country_revenue": average_country_revenue,

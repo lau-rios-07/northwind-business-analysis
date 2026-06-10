@@ -1,5 +1,6 @@
 import sqlite3
 import pandas as pd
+from pathlib import Path
 
 
 from queries import query_high_value_customers
@@ -24,9 +25,11 @@ from analysis import countries_system
 
 from reports import report_northwind_txt
 
+DB_PATH = Path(__file__).parent.parent / "Northwind.db"
 
+db_path = Path("..") / "Northwind Business Analysis v1" / "Northwind.db"
 
-with sqlite3.connect("Northwind Business Analysis v1\\Northwind.db") as conn:
+with sqlite3.connect(DB_PATH) as conn:
     df_high_value_customers = pd.read_sql_query(query_high_value_customers,conn)
     df_top_categories_revenue = pd.read_sql_query(query_top_categories_revenue,conn)
     df_top_employees_by_revenue = pd.read_sql_query(query_top_employees_by_revenue,conn)
@@ -47,7 +50,10 @@ with sqlite3.connect("Northwind Business Analysis v1\\Northwind.db") as conn:
 
 print(df_high_value_customers)
 
-customers_data = customers_system(df_high_value_customers)
+customers_data = customers_system(
+    df_high_value_customers,
+    df_total_revenue["TotalRevenue"].iloc[0]
+)
 
 
 graphics_high_value_customers(df_high_value_customers)
@@ -90,8 +96,10 @@ graphics_top_employees_by_revenue(df_top_employees_by_revenue)
 
 print(df_top_revenue_by_country)
 
-
-countries_data = countries_system(df_top_revenue_by_country)
+countries_data = countries_system(
+    df_top_revenue_by_country,
+    df_total_revenue["TotalRevenue"].iloc[0]
+)
 
 
 

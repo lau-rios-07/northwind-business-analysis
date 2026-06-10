@@ -17,14 +17,14 @@
 
 
 
-                        The top 3 customers accounted for 41.91% of the total revenue.
+                        The top 3 customers accounted for 21.66% of the total revenue.
 
                         indicating that a significant portion of sales comes from a small
                         group of strategic customers.
 
 
                         The highest-value customer was Ernst Handel, generating $38031.21 and representing
-                        18.27% of the total revenue analyzed.
+                        9.44% of the total revenue analyzed.
 
 
                         Additionally, The average customer spending is $20817.521
@@ -69,7 +69,7 @@
                         The country with the highest revenue was USA.
 
 
-                        This market generated $72971.75 and accounted for 21.11% of the revenue analyzed.
+                        This market generated $72971.75 and accounted for 18.12% of the revenue analyzed.
 
 
                         The results suggest that this country represents one of the company's

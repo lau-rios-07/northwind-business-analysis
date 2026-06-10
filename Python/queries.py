@@ -25,7 +25,7 @@ query_top_categories_revenue = '''
 
 
 query_top_employees_by_revenue = '''
-    SELECT CONCAT(FirstName, " ", LastName) AS EmployeeName, SUM(p.Price * od.Quantity) AS Revenue FROM Employees e
+    SELECT FirstName || ' ' || LastName AS EmployeeName, SUM(p.Price * od.Quantity) AS Revenue FROM Employees e
     INNER JOIN Orders o 
     ON o.EmployeeID = e.EmployeeID
     INNER JOIN OrderDetails od 
